@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mySelf</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<!--导航-->
+<div id="nav">
+    <div><a href="javascript:;" style='border-color:#aaa;'>首页</a></div>
+    <div><a href="javascript:;">介绍</a></div>
+    <div><a href="javascript:;">技能</a></div>
+    <div><a href="javascript:;">联系</a></div>
+</div>
+<!--头标题-->
+<div id="head">
+    <div>
+        <h1>简历</h1>
+        <p>Hello world</p>
+    </div>
+</div>
+<!--关于我-->
+<div id="me">
+    <div class="text">
+        <div>李振虎</div>
+        <div>
+            <p><span>性别：</span><span>男</span></p>
+            <p><span>籍贯：</span><span>河北省邯郸市</span></p>
+            <p><span>学校：</span><span>燕京理工学院</span></p>
+            <p><span>学历：</span><span>本科</span></p>
+        </div>
+        <div>
+            <p><span>电话：</span><span>18034103322</span></p>
+            <p><span>邮箱：</span><span>2740128806@qq.com</span></p>
+            <p><span>职位：</span><span>前端工程师</span></p>
+            <p><span>工资：</span><span>面议</span></p>
+        </div>
+    </div>
+    <div class="photo">
+        <img src="img/about.jpg" alt="">
+    </div>
+</div>
+<!--理念-->
+<div id="show">
+    <div>
+        <div>HTML5</div>
+    </div>
+    <div>
+        <div><img src="img/idea-01.jpg" alt=""></div>
+    </div>
+    <div>
+        <div>CSS3</div>
+    </div>
+    <div>
+        <div><img src="img/idea-02.jpg" alt=""></div>
+    </div>
+    <div>
+        <div>Javascript</div>
+    </div>
+    <div>
+        <div><img src="img/idea-03.jpg" alt=""></div>
+    </div>
+    <div>
+        <div>Query</div>
+    </div>
+    <div>
+        <div><img src="img/idea-04.jpg" alt=""></div>
+    </div>
+    <div>
+        <div>Tools</div>
+    </div>
+</div>
+<!--自我描述-->
+<div id="say">
+    <div class="box">
+        <div class="move">
+            <div>
+                <h1>雪域秘茶</h1>
+                <p>项目描述： 该项目是一款企业网站，主要用于企业文化的展示、产品的展示等
+                </p>
+            </div>
+            <div>
+                <h1>福州清新教育</h1>
+                <p>
+                    项目描述： 该项目是一款响应式企业网站，主要用于企业文化的展示、师资力量的展示、课程的介绍等
+                </p>
+            </div>
+            <div>
+                <h1>网易严选 </h1>
+                <p>
+                    项目描述： 该项目是一款响应式企业网站，主要用于企业文化的展示、师资力量的展示、课程的介绍等
+                </p>
+            </div>
+            <div>
+                <h1>雪域秘茶</h1>
+                <p>项目描述：该项目是一款企业网站，主要用于企业文化的展示、产品的展示等
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="circle">
+        <span style="background: #999;"></span><span></span><span></span>
+    </div>
+</div>
+<!--联系我-->
+<div id="contact">
+    <div class="tit_img"><img src="img/contact.jpg" alt=""></div>
+    <div class="contact_me">
+        <div class="title">
+            联系我
+        </div>
+        <div class="contact_form">
+            <form action="">
+                <div>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div>
+                    <textarea name="" id="" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    (function (win,doc){
+        function change()
+        {
+            document.documentElement.style.fontSize=100/750*document.documentElement.clientWidth+'px';
+            if(document.documentElement.clientWidth>750){
+                document.documentElement.style.fontSize=100+'px';
+            }
+        }
+        doc.addEventListener('DOMContentLoaded',change,false);
+        win.addEventListener('resize',change,false);
+    })(window,document);
+</script>
+</body>
+</html>
